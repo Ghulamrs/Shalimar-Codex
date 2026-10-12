@@ -1,0 +1,7 @@
+fun <> = bump(&n: int) {
+    n : n + 1
+}
+
+fun main() {
+    bump(5)
+}

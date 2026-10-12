@@ -1,0 +1,19 @@
+fun <> = update(text[]: char) {
+    text : "changed"
+    ? text
+}
+
+fun main() {
+    char greeting[12] : "hello"
+    char shortText[4] : "abcdef"
+    greeting : "Shalimar"
+    ? greeting, shortText
+    shortText : "longer"
+    ? shortText
+    greeting : shortText
+    ? greeting
+    update(greeting)
+    ? greeting
+    update(shortText)
+    ? shortText
+}

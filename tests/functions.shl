@@ -1,0 +1,8 @@
+fun <int> = square(n: int) {
+    return n * n
+}
+
+fun main() {
+    int x : square(7)
+    ? x
+}

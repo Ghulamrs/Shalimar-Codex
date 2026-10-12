@@ -1,0 +1,26 @@
+int total : 5
+real factor : 1.5
+char code : 65
+
+fun <> = increment(&value: int) {
+    value : value + 1
+    return
+}
+
+fun <> = doubleReal(&value: real) {
+    value : value * 2
+}
+
+fun <> = advance(&value: char) {
+    value : value + 1
+    return
+}
+
+fun main() {
+    int local : 10
+    increment(local)
+    increment(total)
+    doubleReal(factor)
+    advance(code)
+    ? local, total, factor, code
+}

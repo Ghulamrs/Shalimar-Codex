@@ -1,0 +1,6 @@
+fun <int, real, int> = three() {
+    return (12, 3.5, 7)
+}
+fun main() {
+    return
+}

@@ -1,0 +1,5 @@
+int values[2] : {10, 20}
+
+fun main() {
+    ? values[2]
+}

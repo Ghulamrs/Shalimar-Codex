@@ -1,0 +1,5 @@
+uses sqrt
+fun main() {
+    real sqrt : 2.
+    ? sqrt
+}

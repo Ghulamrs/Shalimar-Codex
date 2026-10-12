@@ -1,0 +1,11 @@
+fun <int> = minimumValue() {
+    return -2147483647 - 1
+}
+
+fun <int> = divideValues(left: int, right: int) {
+    return left / right
+}
+
+fun main() {
+    ? divideValues(minimumValue(), -1)
+}

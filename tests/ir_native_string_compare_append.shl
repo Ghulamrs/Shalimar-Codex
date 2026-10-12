@@ -1,0 +1,15 @@
+fun main() {
+    char first[12] : "apple"
+    char same[12] : "apple"
+    char later[12] : "banana"
+    char self[8] : "ab"
+    ? first = same, first != later, first < later, later > first
+    ? first <= same, later >= first
+    first +: " pie"
+    ? first
+    first +: "xxxxxxxxxxxx"
+    ? first
+    self +: self
+    ? self
+    ? first = "apple piexx", later = "banana"
+}

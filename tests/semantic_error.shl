@@ -1,0 +1,8 @@
+fun <int> = broken(n: int) {
+    int x : unknownName
+    return x
+}
+
+fun main() {
+    ? broken(3)
+}

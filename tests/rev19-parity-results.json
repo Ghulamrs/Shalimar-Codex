@@ -1,0 +1,116 @@
+[
+  {
+    "program": "factorial.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  },
+  {
+    "program": "fibonacci.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  },
+  {
+    "program": "gaussseidel.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: solve: IR-native backend supports scalar int/real/char parameters (including scalar references), rank-one/rank-two int arrays, and rank-one char string parameters",
+    "parity": false
+  },
+  {
+    "program": "gcd.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  },
+  {
+    "program": "invert.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: invert: IR-native backend supports scalar int/real/char parameters (including scalar references), rank-one/rank-two int arrays, and rank-one char string parameters",
+    "parity": false
+  },
+  {
+    "program": "prime.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: prime: IR-native backend does not yet support real-valued for counters",
+    "parity": false
+  },
+  {
+    "program": "quadratic.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  },
+  {
+    "program": "rotations.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend does not support assigning an array literal to a scalar",
+    "parity": false
+  },
+  {
+    "program": "rotmat.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: ROX: IR-native backend supports scalar int/real/char parameters (including scalar references), rank-one/rank-two int arrays, and rank-one char string parameters",
+    "parity": false
+  },
+  {
+    "program": "sqroot.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  },
+  {
+    "program": "strsplit.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend does not support IR operation: break",
+    "parity": false
+  },
+  {
+    "program": "table.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  }
+]

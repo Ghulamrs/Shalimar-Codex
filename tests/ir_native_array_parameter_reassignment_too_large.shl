@@ -1,0 +1,8 @@
+fun <> = overflow(values[]: int) {
+    values : {1, 2, 3}
+}
+
+fun main() {
+    int values[2] : {4, 5}
+    overflow(values)
+}

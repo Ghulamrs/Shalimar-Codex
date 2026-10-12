@@ -1,0 +1,114 @@
+[
+  {
+    "program": "factorial.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  },
+  {
+    "program": "fibonacci.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  },
+  {
+    "program": "gaussseidel.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend currently supports only the borrowed len function",
+    "parity": false
+  },
+  {
+    "program": "gcd.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  },
+  {
+    "program": "invert.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend currently supports only the borrowed len function",
+    "parity": false
+  },
+  {
+    "program": "prime.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend currently supports only the borrowed len function",
+    "parity": false
+  },
+  {
+    "program": "quadratic.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend currently supports only the borrowed len function",
+    "parity": false
+  },
+  {
+    "program": "rotations.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend currently supports only the borrowed len function",
+    "parity": false
+  },
+  {
+    "program": "rotmat.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend currently supports only the borrowed len function",
+    "parity": false
+  },
+  {
+    "program": "sqroot.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend currently supports only the borrowed len function",
+    "parity": false
+  },
+  {
+    "program": "strsplit.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 1,
+    "ir_diagnostic": "shalimarc: IR-native code generation error: IR-native backend currently supports only the borrowed len function",
+    "parity": false
+  },
+  {
+    "program": "table.shm",
+    "ast_emit": 0,
+    "ast_compile": 0,
+    "ast_run": 0,
+    "ir_emit": 0,
+    "ir_compile": 0,
+    "ir_run": 0,
+    "parity": true
+  }
+]

@@ -1,0 +1,11 @@
+fun <int> = minimumValue() {
+    return -2147483647 - 1
+}
+
+fun <int> = negateValue(value: int) {
+    return -value
+}
+
+fun main() {
+    ? negateValue(minimumValue())
+}

@@ -1,0 +1,3 @@
+# rev38: Win64 first integer parameter read
+
+The S-mode x86-64 selector now reads the first named integer parameter from ECX and returns it in EAX for the restricted `return parameter` form. The IR stores parameter names alongside the existing typed signature, rather than guessing them from operand strings. A native call passes one integer literal in ECX and uses COFF REL32 relocation. Unsupported instructions and richer parameter expressions remain rejected. This is not a claim of linked Windows execution, multi-parameter support, or debug-symbol availability. All active changes use C++98 and no explicit heap allocation.

@@ -1,0 +1,8 @@
+fun <int> = readPastEnd(values[]: int) {
+    return values[2]
+}
+
+fun main() {
+    int values[2] : {1, 2}
+    ? readPastEnd(values)
+}

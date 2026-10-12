@@ -1,0 +1,38 @@
+uses len
+
+fun <> = mutate(values[]: int) {
+    values[1] : values[0] + values[2]
+    values : {9, 8}
+}
+
+fun <> = forwardValues(values[]: int) {
+    mutate(values)
+}
+
+fun <int> = inspect(values[]: int) {
+    return values.row + values.col + values.dim(0) + values.dim(1) + len(values) + values[0]
+}
+
+fun <> = resetMatrix(matrix[][]: int) {
+    matrix[1][2] : 42
+    matrix : {{7, 8}, {6}}
+}
+
+fun <> = forwardMatrix(matrix[][]: int) {
+    resetMatrix(matrix)
+}
+
+fun <int> = inspectMatrix(matrix[][]: int) {
+    return matrix.row + matrix.col + matrix.dim(0) + matrix.dim(1) + matrix.dim(2) + len(matrix) + matrix[1][1]
+}
+
+fun main() {
+    int values[4] : {1, 2, 3, 4}
+    int matrix[2][3] : {{1, 2, 3}, {4, 5, 6}}
+    forwardValues(values)
+    forwardMatrix(matrix)
+    ? values[0], values[1], values[2], values[3]
+    ? inspect(values)
+    ? matrix[0][0], matrix[0][1], matrix[0][2], matrix[1][0], matrix[1][1], matrix[1][2]
+    ? inspectMatrix(matrix)
+}

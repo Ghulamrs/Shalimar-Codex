@@ -1,0 +1,23 @@
+fun main() {
+    a : 2 b : 3
+    ? a b
+    text : "hello"
+    copy : text + " world"
+    ? text copy copy.row
+    grid : {{1.0,-2.0},{3.25,4.5}}
+    ? grid
+    ? prec(2) grid
+    if a = 0 { a : 9 } else if a = 1 { a : 8 } else if a = 2 { a : 7 } else { a : 6 }
+    ? a
+    for i : 1.0 to 2.0 step 0.5 {
+        ?? i
+    }
+    ? "done"
+    for i < 2.9 {
+        ?? i
+    }
+    ? "end"
+    real p : pi
+    pi : 3
+    ? p pi
+}

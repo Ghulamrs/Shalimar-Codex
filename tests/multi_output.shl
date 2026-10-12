@@ -1,0 +1,10 @@
+fun <int, int> = quotientRemainder(a: int, b: int) {
+    return (a / b, a % b)
+}
+
+fun main() {
+    int quotient : 0
+    int remainder : 0
+    <quotient, remainder> : quotientRemainder(17, 5)
+    ? quotient, remainder
+}

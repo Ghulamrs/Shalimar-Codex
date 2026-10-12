@@ -1,0 +1,9 @@
+fun <int> = addOne(value: int) {
+    return value + 1
+}
+
+fun main() {
+    int first : addOne(20)
+    int second : addOne(first)
+    ? first, second
+}

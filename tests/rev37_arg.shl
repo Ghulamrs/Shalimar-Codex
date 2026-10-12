@@ -1,0 +1,9 @@
+fun <int> = fortyTwo(unused: int) {
+    return 42
+}
+fun <int> = caller() {
+    return fortyTwo(37)
+}
+fun main() {
+    return
+}

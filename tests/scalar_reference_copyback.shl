@@ -1,0 +1,10 @@
+fun <> = updateBoth(&first: int, &second: int) {
+    first : first + 1
+    second : second + 2
+}
+
+fun main() {
+    int value : 5
+    updateBoth(value, value)
+    ? value
+}

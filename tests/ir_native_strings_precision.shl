@@ -1,0 +1,6 @@
+fun main() {
+    ? "Shalimar", 2.5
+    ? prec(3), 1./3.
+    ? prec(0), 2.7
+    ? prec(-1), 1./3.
+}

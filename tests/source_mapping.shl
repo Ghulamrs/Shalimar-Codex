@@ -1,0 +1,5 @@
+fun main() {
+    int value : 41
+    value : value + 1
+    ? value
+}

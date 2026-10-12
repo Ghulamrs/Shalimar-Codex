@@ -1,0 +1,6 @@
+fun <int, int> = f(x: int) {
+    return (int(x), 2)
+}
+fun main() {
+    return
+}

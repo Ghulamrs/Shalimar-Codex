@@ -1,0 +1,6 @@
+int first : later
+int later : 5
+
+fun main() {
+    ? first
+}

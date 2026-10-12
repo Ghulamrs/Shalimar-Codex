@@ -1,0 +1,8 @@
+fun <real> = subtract(x: real) {
+    real value : x - 2.25
+    return value
+}
+fun <real> = answer() {
+    return subtract(1.5)
+}
+fun main() {}

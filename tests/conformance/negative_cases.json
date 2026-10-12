@@ -1,0 +1,13 @@
+[
+ {"id":"undefined-variable","source":"fun <> = main() { ? missing_value }","expect":"reject"},
+ {"id":"break-outside-loop","source":"fun <> = main() { break }","expect":"reject"},
+ {"id":"continue-outside-loop","source":"fun <> = main() { continue }","expect":"reject"},
+ {"id":"array-return-prohibited","source":"fun <char[]> = text() { return \"abc\" }\nfun <> = main() {}","expect":"reject"},
+ {"id":"unborrowed-sqrt","source":"fun <> = main() { ? sqrt(9.) }","expect":"reject"},
+ {"id":"bad-borrow","source":"uses printf\nfun <> = main() {}","expect":"reject"},
+ {"id":"bare-bang","source":"fun <> = main() { ? !1 }","expect":"reject"},
+ {"id":"zero-array-size","source":"fun <> = main() { int a[0] }","expect":"reject"},
+ {"id":"wrong-call-arity","source":"fun <int> = twice(x: int) { return x + x }\nfun <> = main() { ? twice() }","expect":"reject"},
+ {"id":"array-condition","source":"fun <> = main() { int a[2] if a { ? 1 } }","expect":"reject"},
+ {"id":"invalid-reference-literal","source":"fun <> = bump(&x: int) { x +: 1 }\nfun <> = main() { bump(3) }","expect":"reject"}
+]

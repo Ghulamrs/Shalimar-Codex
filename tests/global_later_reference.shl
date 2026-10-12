@@ -1,0 +1,9 @@
+fun <int> = readLater() {
+    return later
+}
+
+int later : 5
+
+fun main() {
+    ? readLater()
+}

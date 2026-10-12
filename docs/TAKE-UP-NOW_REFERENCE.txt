@@ -1,0 +1,252 @@
+SHALIMAR COMPILER — COMPLETE TMS6747 INTEGRATION HANDOFF
+
+To: Windows ChatGPT / Codex Development Team
+Project: Shalimar Compiler — TMS320C6747 DSP Target
+Baseline: Shalimar TMS6747 Windows Merge Rev2
+Development standard: Strict C++98
+Validation environment: Visual Studio 2022, TI C6000 Toolchain, CCS 5.5 C6747 Simulator
+
+1. Authorization
+
+You are authorized to take full responsibility for completing the TMS6747 backend integration, executable generation, debugger information, and simulator qualification.
+
+Proceed through all implementation and testing stages without repeatedly requesting permission.
+
+Do not stop at an assessment, implementation plan, or partial driver connection. Implement, test, correct failures, and deliver cumulative source revisions.
+
+2. Existing project and reference code
+
+Use the latest Shalimar Windows source with the Rev2 DSP integration as the authoritative baseline.
+
+Use Compiler-Si as the primary legacy reference, especially for:
+
+TMS6747 assembly emission.
+
+DSP register allocation and calling conventions.
+
+Function prologues and epilogues.
+
+Stack-frame management.
+
+Arithmetic and instruction selection.
+
+Function calls and return values.
+
+DSP optimization algorithms.
+
+Adapt existing code instead of developing a second independent backend.
+
+Preserve the Windows x64 backend, existing debugging support, and all other compiler targets.
+
+3. Resolve the compiler-driver/backend gap
+
+Ensure the active Shalimar compiler accepts and correctly dispatches:
+
+shalimarc program.shl --target=tms6747 --debug -o program.out
+shalimarc program.shl --target=tms6747 --release -o program.out
+
+Implement the complete compilation chain:
+
+Shalimar source → lexer/parser → semantic analysis → typed IR → TMS6747 instruction selection → TI-compatible assembly → TI assembler → TI linker and RTS → DSP .out executable.
+
+The target selection must operate in the real compiler driver, not in a standalone demonstration program.
+
+Use src/backend/tms6747/IRAssembly.cpp and the existing legacy emitter adaptation as starting points. Inspect the actual source tree before modifying any interface.
+
+4. Produce a working C6747 executable
+
+The first mandatory end-to-end test is a Shalimar function returning the integer 42.
+
+Compile it through Shalimar, assemble and link using the installed TI toolchain, and produce a genuine C6747 .out executable.
+
+Use the previously verified CCS 5.5 simulator control project as the reference for:
+
+Target ABI and object format.
+
+Linker command file and memory configuration.
+
+Runtime support library selection.
+
+Startup and entry-point requirements.
+
+Simulator loading and execution.
+
+A TI-compiled control program has already returned 42 successfully. That establishes simulator readiness, not Shalimar backend correctness.
+
+The acceptance test must execute instructions generated from Shalimar source and verify that the result is 42.
+
+5. Implement real DSP debugger information
+
+Debugger integration is mandatory. A separate source index is insufficient.
+
+Investigate and use the actual debug format, assembler directives, object sections, and conventions supported by the installed TI C6000 toolchain and CCS 5.5 debugger.
+
+Generate genuine debugger-consumable information associated with Shalimar-generated machine instructions.
+
+The required capabilities are:
+
+Source-file identification.
+
+Function symbols and address ranges.
+
+Source-line-to-instruction mapping.
+
+Source-level breakpoints.
+
+Correct function call-stack information.
+
+Parameter and local-variable locations.
+
+Variable type information.
+
+Appropriate handling of optimized or unavailable variables in Release mode.
+
+Preserve source locations throughout typed IR lowering and instruction emission.
+
+Verify the resulting information inside CCS, not merely by checking for debug flags or the presence of sections.
+
+Where the installed TI toolchain cannot express a requested feature, document the precise limitation and retain a regression test.
+
+6. Expand DSP language support
+
+After the first executable passes, progressively integrate the language features already supported by Shalimar's frontend.
+
+Prioritize integer and real arithmetic, local variables, parameters, function calls, branching, loops, arrays, strings, and global data.
+
+Verify ABI correctness and memory behavior at every stage.
+
+Do not claim complete language conformance based on the initial integer-return test.
+
+7. Debug and Release configurations
+
+Debug mode must preserve useful source-level debugging, stable variable locations where feasible, and correct function frames.
+
+Release mode must run verified optimization passes before assembly generation and may apply target-specific optimizations afterward.
+
+Use Compiler-Si's optimization implementation where appropriate, adapting it to the current IR and C++98 requirements.
+
+Compare Debug and Release execution results for the same Shalimar test programs.
+
+Do not conceal or work around existing optimizer defects by changing the language tests.
+
+8. Source and memory-safety requirements
+
+Use strict C++98 throughout the compiler.
+
+Do not introduce explicit new, delete, malloc, or free into the compiler implementation.
+
+Prefer standard-library-managed containers and value-based ownership.
+
+Preserve the class-based compiler architecture.
+
+Keep DSP-specific implementation isolated from the Windows backend.
+
+Maintain consistent C++ source formatting.
+
+Do not replace verified Windows components unnecessarily.
+
+9. Regression and qualification
+
+After every implementation phase:
+
+Rebuild the compiler in Windows Debug and Release.
+
+Run existing Shalimar regression tests.
+
+Run DSP-specific assembly and execution tests.
+
+Verify TI assembler and linker output.
+
+Run applicable tests in CCS 5.5.
+
+Record failures, fixes, and remaining limitations.
+
+The supplied Windows qualification baseline already reports arithmetic and Release-optimizer defects. Keep those findings separate from regressions introduced by this DSP work.
+
+10. Revision and delivery requirements
+
+Create cumulative revisions named Rev3, Rev4, Rev5, and so forth.
+
+Each revision must include all previous accepted changes, not just incremental patches.
+
+Deliver one complete ZIP containing:
+
+Updated Shalimar compiler source.
+
+Visual Studio/CMake build support.
+
+TMS6747 backend implementation.
+
+TI assembler/linker integration.
+
+Debug information generation.
+
+Debug and Release configurations.
+
+Automated regression and CCS test harnesses.
+
+Compiler, assembler, linker, and debugger diagnostics.
+
+Simulator execution results.
+
+Updated language/backend documentation.
+
+A status report distinguishing implemented, tested, verified, and incomplete features.
+
+Preserve the original source baseline and previous revision archives.
+
+11. Acceptance milestones
+
+Milestone
+
+Required proof
+
+A — Driver
+
+Active Shalimar accepts --target=tms6747
+
+B — Assembly
+
+TI assembler accepts Shalimar-generated assembly
+
+C — Executable
+
+TI linker generates a valid .out
+
+D — Simulator
+
+CCS executes Shalimar-generated code and verifies 42
+
+E — Debug symbols
+
+CCS resolves Shalimar source and function symbols
+
+F — Source debugging
+
+CCS source breakpoint stops at the correct instruction
+
+G — Variable debugging
+
+CCS displays verified parameter/local values
+
+H — Release
+
+Optimized DSP programs execute correctly
+
+I — Language coverage
+
+Representative Shalimar regression programs pass
+
+Do not mark a milestone complete without supporting evidence.
+
+12. Final instruction
+
+Take ownership of the complete TMS6747 integration and qualification process now.
+
+Start with the actual Rev2 source and the working CCS simulator configuration. Close the driver/backend gap first, then generate and execute a genuine DSP .out, followed by real source-level debugger support and Release optimization.
+
+Do not duplicate the legacy backend, restart compiler development, or substitute documentation for implementation.
+
+Proceed autonomously through the phases, fixing problems as encountered, and provide complete cumulative ZIP revisions with verified results.
+
+The final objective is a single Shalimar compiler supporting its existing targets and a properly integrated, executable, debuggable, and optimized TMS6747 target.

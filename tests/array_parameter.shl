@@ -1,0 +1,9 @@
+fun <> = setFirst(values[]: int) {
+    values[0] : 42
+}
+
+fun main() {
+    int values[2] : {1, 2}
+    setFirst(values)
+    ? values[0]
+}

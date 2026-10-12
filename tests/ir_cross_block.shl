@@ -1,0 +1,18 @@
+fun <int> = merged(selector: int) {
+    int result : 0
+    if selector > 0 {
+        result : 5
+    } else {
+        result : 5
+    }
+    return result + 1
+}
+
+fun main() {
+    int base : 4
+    if base > 0 {
+        ? base + 3
+    } else {
+        ? 999
+    }
+}

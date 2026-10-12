@@ -1,0 +1,6 @@
+fun <int, real, int> = reduced(x: int) {
+    return (x, 3.5, x - 10)
+}
+fun main() {
+    return
+}

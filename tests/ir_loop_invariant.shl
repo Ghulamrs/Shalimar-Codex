@@ -1,0 +1,18 @@
+fun <int> = leftSeed() {
+    return 4
+}
+
+fun <int> = rightSeed() {
+    return 9
+}
+
+fun main() {
+    int left : leftSeed()
+    int right : rightSeed()
+    int counter : 0
+    while counter < 3 {
+        int relation : left < right
+        ? relation
+        counter : counter + 1
+    }
+}

@@ -1,0 +1,7 @@
+fun <real> = hugeValue() {
+    return 2 ^ 1024
+}
+
+fun main() {
+    ? int(hugeValue())
+}

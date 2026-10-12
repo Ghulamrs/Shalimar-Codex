@@ -1,0 +1,11 @@
+/build*/
+*.o
+*.obj
+*.generated.c
+*.pdb
+*.ilk
+*.exe
+/Debug/
+/Release/
+/x64/
+.DS_Store

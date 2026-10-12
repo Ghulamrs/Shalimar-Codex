@@ -1,0 +1,9 @@
+fun main() {
+    int base : 4
+    int result : base + 3
+    if result > 0 {
+        ? result
+    } else {
+        ? 999
+    }
+}

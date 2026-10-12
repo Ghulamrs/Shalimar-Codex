@@ -1,0 +1,6 @@
+fun <int> = invalid() {
+    return (1, 2)
+}
+fun main() {
+    return
+}

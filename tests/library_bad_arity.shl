@@ -1,0 +1,4 @@
+uses sqrt
+fun main() {
+    ? sqrt(1., 2.)
+}

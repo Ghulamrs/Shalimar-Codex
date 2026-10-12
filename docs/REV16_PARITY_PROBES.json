@@ -1,0 +1,14 @@
+{
+  "ir_literal_string_parameter": {
+    "exit_code": 1,
+    "stderr": "shalimarc: IR-native code generation error: IR-native array arguments must have matching element type and rank for suffix"
+  },
+  "ir_multi_output": {
+    "exit_code": 1,
+    "stderr": "shalimarc: IR-native code generation error: quotientRemainder: IR-native backend supports int, real, char, char[] strings, or no-return functions"
+  },
+  "ir_rank2_array": {
+    "exit_code": 0,
+    "stderr": ""
+  }
+}

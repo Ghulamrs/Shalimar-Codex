@@ -1,0 +1,329 @@
+{
+  "revision": "rev49",
+  "method": "real compiler invocations; GAP means unsupported, not a test pass",
+  "counts": {
+    "PASS": 24,
+    "GAP": 28,
+    "RECORDED": 1
+  },
+  "results": [
+    {
+      "category": "P0 frontend examples",
+      "name": "factorial.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "factorial.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function factloop: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "factorial.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function factloop: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "fibonacci.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "fibonacci.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function main: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "fibonacci.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function main: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "gaussseidel.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "gaussseidel.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function solve: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "gaussseidel.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function solve: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "gcd.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "gcd.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function main: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "gcd.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function main: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "invert.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "invert.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function invert: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "invert.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function invert: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "prime.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "prime.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function prime: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "prime.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function prime: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "quadratic.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "quadratic.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function main: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "quadratic.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function main: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "rotations.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "rotations.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function ROX: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "rotations.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function ROX: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "rotmat.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "rotmat.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function ROX: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "rotmat.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function ROX: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "sqroot.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "sqroot.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function root: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "sqroot.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function root: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "strsplit.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "strsplit.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function split: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "strsplit.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function split: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 frontend examples",
+      "name": "table.shm",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "P0 Windows COFF native debug",
+      "name": "table.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function main: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 Windows COFF native release",
+      "name": "table.shm",
+      "result": "GAP",
+      "detail": "shalimarc: S-mode COFF function main: rev36 supports only zero-argument int functions with one basic block\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "undefined-variable",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/undefined-variable.shl: parse error: line 1: print command must start its line\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "break-outside-loop",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/break-outside-loop.shl: semantic error: in function 'main': 'break' is only valid inside a loop\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "continue-outside-loop",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/continue-outside-loop.shl: semantic error: in function 'main': 'continue' is only valid inside a loop\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "array-return-prohibited",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/array-return-prohibited.shl: parse error: line 1: arrays, including char[], cannot be function return types; use a reference parameter\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "unborrowed-sqrt",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/unborrowed-sqrt.shl: parse error: line 1: print command must start its line\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "bad-borrow",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/bad-borrow.shl: semantic error: line 1: cannot borrow 'printf': variadic or pointer-based signatures are not representable in Shalimar\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "bare-bang",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/bare-bang.shl: lex error: line 1, column 21: unsupported character\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "zero-array-size",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/zero-array-size.shl: semantic error: in function 'main': array dimensions must be at least 1\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "wrong-call-arity",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/wrong-call-arity.shl: parse error: line 2: print command must start its line\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "array-condition",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/array-condition.shl: parse error: line 1: print command must start its line\n"
+    },
+    {
+      "category": "P0 negative semantics",
+      "name": "invalid-reference-literal",
+      "result": "PASS",
+      "detail": "/tmp/shalimar-rev49-6fameo7o/invalid-reference-literal.shl: semantic error: in function 'main': reference argument must be a variable or array element\n"
+    },
+    {
+      "category": "P0-P3 target and debug gates",
+      "name": "CodeView/PDB",
+      "result": "GAP",
+      "detail": "shalimarc: native CodeView/PDB debugging is not implemented; refusing symbol request\n"
+    },
+    {
+      "category": "P0-P3 target and debug gates",
+      "name": "Linux ELF",
+      "result": "GAP",
+      "detail": "Unknown argument: --target=x86_64-linux-gnu\n"
+    },
+    {
+      "category": "P0-P3 target and debug gates",
+      "name": "macOS Mach-O",
+      "result": "GAP",
+      "detail": "Unknown argument: --target=arm64-apple-darwin\n"
+    },
+    {
+      "category": "P0-P3 target and debug gates",
+      "name": "TI TMS6747",
+      "result": "GAP",
+      "detail": "Unknown argument: --target=tms6747\n"
+    },
+    {
+      "category": "Architecture",
+      "name": "source allocation-token scan",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "category": "Specification",
+      "name": "uploaded 3.0 reference SHA256",
+      "result": "RECORDED",
+      "detail": "379029772f7fe6d6dcd4bb176353114eaf3378e09db5ffe7d888576d162d6f8e"
+    }
+  ]
+}

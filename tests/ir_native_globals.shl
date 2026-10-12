@@ -1,0 +1,19 @@
+int uninitialized
+int seed : 7
+int derived : calculate(seed)
+
+fun <int> = calculate(value: int) {
+    return value * 3
+}
+
+fun bumpSeed() {
+    seed : seed + 1
+}
+
+fun main() {
+    bumpSeed()
+    ? uninitialized, seed, derived
+    uninitialized : uninitialized + 2
+    derived : calculate(seed)
+    ? uninitialized, derived
+}

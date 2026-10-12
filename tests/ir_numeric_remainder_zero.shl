@@ -1,0 +1,7 @@
+fun <int> = remainderValues(left: int, right: int) {
+    return left % right
+}
+
+fun main() {
+    ? remainderValues(7, 0)
+}

@@ -1,0 +1,7 @@
+fun <> = main() {
+    int x : 4
+    x +: 3
+    if x = 7 {
+        ? "PASS"
+    }
+}

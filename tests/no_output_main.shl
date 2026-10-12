@@ -1,0 +1,4 @@
+fun main() {
+    ? "main without explicit empty output list"
+    return
+}

@@ -1,0 +1,8 @@
+fun <real> = addOffset(x: real) {
+    return x + 2.25
+}
+fun <real> = addReversed(x: real) {
+    return 2.25 + x
+}
+fun main() {
+}

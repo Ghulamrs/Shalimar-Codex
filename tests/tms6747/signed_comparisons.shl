@@ -1,0 +1,6 @@
+fun <int> = compare(x: int, y: int) {
+    if x < y { if x <= y { if y > x { if y >= x { if x != y { return 42 } } } } }
+    return 99
+}
+fun <int> = answer() { return compare(0 - 7, 2) }
+fun main() {}

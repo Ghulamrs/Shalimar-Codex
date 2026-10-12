@@ -1,0 +1,8 @@
+fun <int, char, int> = three_char() {
+    return (12) // omitted char and int are zero-initialized
+}
+fun <char> = caller_char() {
+    <a, b, c> : three_char()
+    return b
+}
+fun main() { return }

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "toolsets/shalimar-c6747/bin/asm6x.exe",
+    "origin": "C:\\Users\\GRA\\source\\asm6x.exe",
+    "sha256": "32f403ef193d92e60fbaaef3f773d42dc7c2c29b3cbfb2854a126615f3be2fb6"
+  },
+  {
+    "file": "toolsets/shalimar-c6747/bin/lnk6x.exe",
+    "origin": "C:\\Users\\GRA\\source\\lnk6x.exe",
+    "sha256": "587e8c966891d8f7f0f2a74706b80573fa32f2f5935651f68f66538b2f2ade0b"
+  },
+  {
+    "file": "toolsets/shalimar-c6747/bin/vm6747.exe",
+    "origin": "C:\\Users\\GRA\\source\\vm6747.exe",
+    "sha256": "38ae317bd6010a299c0978cb3c2123c1b09a65d44494b349adc5986844a1f9b4"
+  },
+  {
+    "file": "toolsets/shalimar-c6747/bin/sim6747.exe",
+    "origin": "C:\\Users\\GRA\\source\\sim6747.exe",
+    "sha256": "0637cc0c75d838a29441c1dfb0a3b26ce6054dd1fd573e6d8bbe06c71bca1194"
+  },
+  {
+    "file": "toolsets/shalimar-c6747/lib/rts6x.lib",
+    "origin": "C:\\Users\\GRA\\Developer\\Claude\\M10\\RTS6x\\build\\rts6x.lib",
+    "sha256": "770e2d95d3c5517a26cb22715d1f7a79da30b5a9302fe5e453ea67a664363212"
+  },
+  {
+    "file": "toolsets/shalimar-c6747/lib/rts6xd.lib",
+    "origin": "C:\\Users\\GRA\\Developer\\Claude\\M10\\RTS6x\\build\\rts6xd.lib",
+    "sha256": "271175970d421efda395d5f4ca1158b8aa9d6a271c64378a0140617729a82651"
+  }
+]

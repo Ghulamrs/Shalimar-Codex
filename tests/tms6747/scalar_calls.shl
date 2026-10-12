@@ -1,0 +1,8 @@
+fun <int> = plus(x: int, y: int) {
+    int value : x + y
+    return value
+}
+fun <int> = answer() {
+    return plus(17, 25)
+}
+fun main() {}

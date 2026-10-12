@@ -1,0 +1,7 @@
+fun <int> = addValues(left: int, right: int) {
+    return left + right
+}
+
+fun main() {
+    ? addValues(2147483647, 1)
+}

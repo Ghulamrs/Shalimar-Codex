@@ -1,0 +1,14 @@
+fun <int> = answer() {
+    int value : 0
+    int i : 0
+    while i < 7 {
+        value : value + 6
+        i : i + 1
+    }
+    if value = 42 {
+        return value
+    } else {
+        return 99
+    }
+}
+fun main() {}

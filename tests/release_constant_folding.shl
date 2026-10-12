@@ -1,0 +1,5 @@
+fun main() {
+    int folded : (2 + 3) * 4 - 6 / 2
+    int compared : (3 * 3) >= (2 + 6)
+    ? folded, compared
+}

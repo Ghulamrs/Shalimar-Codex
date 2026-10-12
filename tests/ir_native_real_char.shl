@@ -1,0 +1,19 @@
+real base : 2.5
+real derived : scale(base, 3.)
+char initialMark : 65
+
+fun <real> = scale(value: real, factor: real) {
+    return value * factor
+}
+
+fun <char> = nextMark(value: char) {
+    return value + 1
+}
+
+fun main() {
+    real localValue : derived
+    char mark : nextMark(initialMark)
+    ? localValue, mark
+    localValue : localValue / 2.
+    ? localValue
+}

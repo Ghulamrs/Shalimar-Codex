@@ -1,0 +1,20 @@
+uses len
+
+fun <> = showText(text[]: char) {
+    ? text, len(text)
+}
+
+fun <> = forwardText(text[]: char) {
+    showText(text)
+}
+
+fun main() {
+    char greeting[12] : "hello"
+    char shortText[4] : "abcdef"
+    ? greeting, shortText
+    ? greeting[0]
+    greeting[0] : 72
+    ? greeting
+    showText(greeting)
+    forwardText(greeting)
+}

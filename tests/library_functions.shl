@@ -1,0 +1,6 @@
+uses sqrt, abs, max, min, pow, len
+
+fun main() {
+    int values[3] : {4, 8, 12}
+    ? sqrt(81.), abs(-5), abs(-2.5), max(3, 9), min(3., 9.), pow(2., 3.), len(values)
+}

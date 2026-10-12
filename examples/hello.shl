@@ -1,0 +1,15 @@
+fun main() {
+    int count : 3
+    real radius : 2.5
+    ? "Shalimar compiler"
+    ? count, radius
+    if count > 0 {
+        ? "count is positive"
+    } else {
+        ? "count is not positive"
+    }
+    for i < count {
+        ? i
+    }
+    return
+}

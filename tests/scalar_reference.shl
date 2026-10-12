@@ -1,0 +1,10 @@
+fun <> = bump(&n: int) {
+    n : n + 1
+    return
+}
+
+fun main() {
+    int value : 5
+    bump(value)
+    ? value
+}

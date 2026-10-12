@@ -1,0 +1,8 @@
+fun <real> = identity(x: real) {
+    return x
+}
+fun <real> = plus() {
+    return 1.5 + 2.25
+}
+fun main() {
+}

@@ -1,0 +1,78 @@
+{
+  "compiler_code_violations": [],
+  "generated_C_runtime_strings_with_allocation_terms": [
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 608
+    },
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 626
+    },
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 1281
+    },
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 1289
+    },
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 1290
+    },
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 1291
+    },
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 1302
+    },
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 1311
+    },
+    {
+      "file": "src/CodeGenerator.cpp",
+      "line": 1353
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 835
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 841
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 842
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 843
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 851
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 855
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 1300
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 1750
+    },
+    {
+      "file": "src/IRCodeGenerator.cpp",
+      "line": 1791
+    }
+  ],
+  "scope": "src/*.cpp and include/*.h; comments and string literals excluded from executable compiler-code tokens"
+}

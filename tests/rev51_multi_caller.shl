@@ -1,0 +1,10 @@
+fun <int, real, int> = three() {
+    return (12, 3.5, 7)
+}
+fun <int> = caller() {
+    <a, b, c> : three()
+    return a
+}
+fun main() {
+    return
+}

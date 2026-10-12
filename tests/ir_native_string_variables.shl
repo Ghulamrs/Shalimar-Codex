@@ -1,0 +1,21 @@
+uses len
+
+fun <> = update(text[]: char) {
+    ? text
+    text : "changed"
+    ? text
+}
+
+fun <int> = capacity(text[]: char) {
+    return len(text)
+}
+
+fun main() {
+    char greeting[12] : "hello"
+    char shortText[4] : "abcdef"
+    ? greeting, shortText
+    greeting : "Shalimar"
+    ? greeting
+    update(greeting)
+    ? greeting, capacity(greeting)
+}

@@ -1,0 +1,22 @@
+real globalPower : 2 ^ 3
+real globalConversion : real(3)
+
+fun <real> = powerValue(base: real, exponent: real) {
+    return base ^ exponent
+}
+
+fun main() {
+    ? -2^2
+    ? 2^-2
+    ? 2^3^2
+    ? 2 + 3 * 4
+    ? (2 + 3) * 4
+    ? 10 - 3 - 2
+    ? 1 | 0 & 0
+    ? 9 % 4 * 2
+    ? real(3) / 2
+    ? int(2.9), int(-2.9)
+    ? char(65)
+    ? powerValue(2, 3)
+    ? globalPower, globalConversion
+}

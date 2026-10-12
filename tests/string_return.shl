@@ -1,0 +1,23 @@
+fun <char[]> = makeGreeting() {
+    return "Shalimar"
+}
+
+fun <char[]> = addSuffix(base[]: char) {
+    return base + " Compiler"
+}
+
+fun <char[]> = makeLocalText() {
+    char local[12] : "local text"
+    return local
+}
+
+fun main() {
+    char greeting[20]
+    char complete[24]
+    greeting : makeGreeting()
+    complete : addSuffix(greeting)
+    ? greeting
+    ? complete
+    ? makeGreeting() = "Shalimar"
+    ? makeLocalText()
+}

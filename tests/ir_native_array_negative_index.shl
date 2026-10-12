@@ -1,0 +1,4 @@
+fun main() {
+    int values[2] : {5, 6}
+    ? values[-1]
+}

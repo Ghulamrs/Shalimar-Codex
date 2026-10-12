@@ -1,0 +1,6 @@
+fun <real, int, real> = replicate_real(x: real) {
+    return (x, 7, x)
+}
+fun main() {
+    return
+}

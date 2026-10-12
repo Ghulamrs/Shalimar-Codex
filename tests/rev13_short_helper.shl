@@ -1,0 +1,6 @@
+fun greet() {
+  ? "greetings"
+}
+fun main() {
+  greet()
+}

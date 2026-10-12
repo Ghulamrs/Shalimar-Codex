@@ -1,0 +1,9 @@
+fun main() {
+    int vector[4] : {10, 20, 30, 40}
+    int matrix[2][3]
+    int axis : 0
+
+    ? vector.row, vector.col, vector.dim(axis), vector.dim(-1)
+    ? matrix.row, matrix.col, matrix.dim(1), matrix.dim(2)
+    ? matrix[0].row, matrix[0].col
+}

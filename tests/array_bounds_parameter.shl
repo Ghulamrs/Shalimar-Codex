@@ -1,0 +1,8 @@
+fun <int> = readAt(values[]: int, index: int) {
+    return values[index]
+}
+
+fun main() {
+    int values[2] : {10, 20}
+    ? readAt(values, 2)
+}

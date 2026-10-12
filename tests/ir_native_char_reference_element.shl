@@ -1,0 +1,11 @@
+fun <> = mutate(&position: int, &value: char) {
+    position : 2
+    value : value + 1
+}
+
+fun main() {
+    char text[8] : "cat"
+    int position : 0
+    mutate(position, text[position])
+    ? position, text
+}

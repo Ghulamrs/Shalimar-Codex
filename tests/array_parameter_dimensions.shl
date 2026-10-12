@@ -1,0 +1,19 @@
+uses len
+fun <int> = inspect(values[]: int) {
+    return (values.row + values.col + values.dim(0) + values.dim(1) + len(values) + values[3])
+}
+
+fun <int> = inspectRow(values[]: int) {
+    return (len(values) + values[1])
+}
+
+fun <int> = inspectMatrix(values[][]: int) {
+    return (values.row + values.col + values.dim(0) + values.dim(1) + values.dim(2) + len(values) + values[1][2] + inspectRow(values[1]))
+}
+
+fun main() {
+    int values[4] : {1, 2, 3, 4}
+    int matrix[2][3] : {{1, 2, 3}, {4, 5, 6}}
+    ? inspect(values)
+    ? inspectMatrix(matrix)
+}

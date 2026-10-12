@@ -1,0 +1,4 @@
+uses printf
+fun main() {
+    ? 1
+}

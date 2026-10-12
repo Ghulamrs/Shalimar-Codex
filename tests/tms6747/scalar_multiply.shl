@@ -1,0 +1,7 @@
+fun <int> = multiply(x: int, y: int) {
+    return x * y
+}
+fun <int> = answer() {
+    return multiply(6, 7)
+}
+fun main() {}

@@ -1,0 +1,4 @@
+fun <> = main() {
+    ? "explicit empty output list"
+    return
+}

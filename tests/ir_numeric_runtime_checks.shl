@@ -1,0 +1,16 @@
+fun <int> = addValues(left: int, right: int) {
+    return left + right
+}
+
+fun <int> = divideValues(left: int, right: int) {
+    return left / right
+}
+
+fun <int> = multiplyValues(left: int, right: int) {
+    return left * right
+}
+
+fun main() {
+    ? addValues(40, 2), multiplyValues(6, 7), divideValues(9, 2)
+    ? int(2.9), int(-2.9), char(65)
+}

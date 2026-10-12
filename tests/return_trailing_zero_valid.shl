@@ -1,0 +1,9 @@
+fun <int, real, char, int> = partial(x: int) {
+    return (x + 5, 3.14)
+}
+fun <int, real, char> = empty() {
+    return ()
+}
+fun main() {
+    return
+}

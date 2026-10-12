@@ -1,0 +1,7 @@
+fun <real> = add(x: int, y: real) {
+    return x + y
+}
+fun <real> = answer() {
+    return add(2, 1.5)
+}
+fun main() {}

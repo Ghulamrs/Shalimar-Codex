@@ -1,0 +1,9 @@
+fun <int> = answer() {
+    return 42
+}
+fun <int> = caller() {
+    return answer()
+}
+fun main() {
+    return
+}

@@ -1,0 +1,7 @@
+fun <int> = multiplyValues(left: int, right: int) {
+    return left * right
+}
+
+fun main() {
+    ? multiplyValues(50000, 50000)
+}

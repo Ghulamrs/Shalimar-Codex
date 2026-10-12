@@ -1,0 +1,22 @@
+uses len
+
+char message[8] : "hello"
+char second[12] : "Shalimar"
+char shortText[4] : "abcdef"
+
+fun <> = updateGlobals() {
+    message +: "!"
+    second : message
+    message : "updated"
+    ? message, second
+}
+
+fun main() {
+    ? message, len(message)
+    ? shortText, len(shortText)
+    updateGlobals()
+    ? second
+    message[0] : 72
+    second[0] : 88
+    ? message, second
+}

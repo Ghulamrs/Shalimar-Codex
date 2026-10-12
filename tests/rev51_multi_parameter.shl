@@ -1,0 +1,6 @@
+fun <int, real, int> = replicate(x: int) {
+    return (x, 3.5, x)
+}
+fun main() {
+    return
+}

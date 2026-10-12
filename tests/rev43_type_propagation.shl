@@ -1,0 +1,8 @@
+uses sqrt
+fun <real> = rootOf(x: real) {
+    return sqrt(x)
+}
+fun main() {
+    real value : 81.
+    ? sqrt(value)
+}

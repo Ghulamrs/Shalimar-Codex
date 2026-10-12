@@ -1,0 +1,5 @@
+fun <real> = subtractOffset(x: real) {
+    return x - 2.25
+}
+fun main() {
+}

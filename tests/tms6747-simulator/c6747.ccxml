@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations XML_version="1.2" id="configurations_0">
+  <instance XML_version="1.2" desc="C6747 Device Functional Simulator, Little Endian" href="configurations/tisim_c6747_pv.xml" id="C6747 Device Functional Simulator, Little Endian" xml="tisim_c6747_pv.xml" xmlpath="configurations"/>
+</configurations>

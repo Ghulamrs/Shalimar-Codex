@@ -1,0 +1,6 @@
+fun main() {
+    char shortText[4] : "abcdef"
+    char exactText[4] : "abc"
+    ? shortText
+    ? exactText
+}

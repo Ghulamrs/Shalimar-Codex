@@ -1,0 +1,32 @@
+uses len
+
+int seed : 4
+int values[4] : {seed,,3}
+int matrix[2][3] : {{1, 2}, {seed}}
+int empty[2]
+
+fun <> = updateValues(values[]: int) {
+    values[1] : values[0] + values[2]
+    values : {9, 8}
+}
+
+fun <> = updateMatrix(matrix[][]: int) {
+    matrix[1][2] : 42
+    matrix : {{7, 8}, {6}}
+}
+
+fun <int> = inspectGlobal(values[]: int) {
+    return values.row + values.col + values.dim(0) + len(values) + values[0]
+}
+
+fun main() {
+    ? values[0], values[1], values[2], values[3]
+    ? matrix[0][0], matrix[0][1], matrix[0][2], matrix[1][0], matrix[1][1], matrix[1][2]
+    ? empty[0], empty[1]
+    ? values.row, values.col, values.dim(0), len(values)
+    ? inspectGlobal(values)
+    updateValues(values)
+    updateMatrix(matrix)
+    ? values[0], values[1], values[2], values[3]
+    ? matrix[0][0], matrix[0][1], matrix[0][2], matrix[1][0], matrix[1][1], matrix[1][2]
+}

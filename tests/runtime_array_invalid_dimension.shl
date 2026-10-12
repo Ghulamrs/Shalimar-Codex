@@ -1,0 +1,5 @@
+fun main() {
+    int count : 0
+    int values[count]
+    ? values.row
+}

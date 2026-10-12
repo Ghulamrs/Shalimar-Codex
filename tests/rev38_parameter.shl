@@ -1,0 +1,9 @@
+fun <int> = identity(value: int) {
+    return value
+}
+fun <int> = caller() {
+    return identity(37)
+}
+fun main() {
+    return
+}

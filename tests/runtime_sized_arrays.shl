@@ -1,0 +1,22 @@
+uses len
+
+fun <int> = dynamicTotal(n: int) {
+    int values[n] : {2, 4}
+    values[2] : 6
+    return values[0] + values[1] + values[2] + values.row + len(values)
+}
+
+fun main() {
+    int rows : 2
+    int columns : 3
+    int matrix[rows][columns] : {{1, 2}, {3}}
+    matrix[1][2] : 4
+    ? matrix.row, matrix.col, matrix[0][0], matrix[0][1], matrix[0][2]
+    ? matrix[1][0], matrix[1][1], matrix[1][2]
+    int count : 5
+    int values[count]
+    values[4] : 9
+    values : {7, 8}
+    ? len(values), values[0], values[1], values[2], values[4]
+    ? dynamicTotal(4)
+}

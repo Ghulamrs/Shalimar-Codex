@@ -1,0 +1,13 @@
+fun main() {
+    char message[20] : "Shali"
+    ? "Shali" + "mar"
+    ? message + "mar"
+    message : message + "mar"
+    ? message
+    ? (message = "Shalimar")
+    ? (message + "x" = "Shalimarx")
+    ? ("abc" < "abd"), ("same" = "same"), ("same" != "other")
+    char small[5] : "go"
+    small : small + "ing"
+    ? small
+}

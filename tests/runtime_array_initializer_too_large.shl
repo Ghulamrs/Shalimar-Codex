@@ -1,0 +1,5 @@
+fun main() {
+    int count : 2
+    int values[count] : {1, 2, 3}
+    ? values[0]
+}

@@ -1,0 +1,7 @@
+fun <int> = convertValue(value: real) {
+    return int(value)
+}
+
+fun main() {
+    ? convertValue(2147483648.)
+}

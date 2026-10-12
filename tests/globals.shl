@@ -1,0 +1,12 @@
+int base : 10
+int result : add(base, 2)
+
+fun <int> = add(a: int, b: int) {
+    return a + b
+}
+
+fun main() {
+    ? base, result
+    result : result + 1
+    ? result
+}

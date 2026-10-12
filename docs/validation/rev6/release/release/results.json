@@ -1,0 +1,92 @@
+{
+  "mode": "release",
+  "backend": "ast",
+  "passed": 12,
+  "total": 12,
+  "results": [
+    {
+      "program": "factorial.shm",
+      "sha256": "b0e6477f2975a8ee09108f037694f6e610feda5cc323b9494b9aeeb8e375c464",
+      "status": "PASS",
+      "expected_lines": 3,
+      "verified_lines": 3
+    },
+    {
+      "program": "fibonacci.shm",
+      "sha256": "a859616f924fb28014bda01ed6a151327836af51732a13612bf9d20795f77ea0",
+      "status": "PASS",
+      "expected_lines": 2,
+      "verified_lines": 2
+    },
+    {
+      "program": "gaussseidel.shm",
+      "sha256": "139280537297ef7c2e627f810eee62e347f8d205af90b5a37b37a091c060fcb1",
+      "status": "PASS",
+      "expected_lines": 2,
+      "verified_lines": 2
+    },
+    {
+      "program": "gcd.shm",
+      "sha256": "2d9c3cfe873141a36476050defd7cdd7aa29875063f61c55516881e30cfc250b",
+      "status": "PASS",
+      "expected_lines": 2,
+      "verified_lines": 2
+    },
+    {
+      "program": "invert.shm",
+      "sha256": "bbe7d984fa4b15a1ba4bc00cf907d9ba303a42d4fd10550b359492eb78df6756",
+      "status": "PASS",
+      "expected_lines": 6,
+      "verified_lines": 6
+    },
+    {
+      "program": "prime.shm",
+      "sha256": "f3d1b72743dff454cc156a3ee038be48a12186bbd66f59143c4db35a3aba8d77",
+      "status": "PASS",
+      "expected_lines": 25,
+      "verified_lines": 25
+    },
+    {
+      "program": "quadratic.shm",
+      "sha256": "0413861667b0d5ea73fca163c700a3ab10871a8bd9914970944b1669fe00feda",
+      "status": "PASS",
+      "expected_lines": 1,
+      "verified_lines": 1
+    },
+    {
+      "program": "rotations.shm",
+      "sha256": "b9ab229a28ebe1eef2804af38cf5aab18e165f1d1d842603608a3364c84ff96e",
+      "status": "PASS",
+      "expected_lines": 12,
+      "verified_lines": 12
+    },
+    {
+      "program": "rotmat.shm",
+      "sha256": "2a334fc61d45ba29af947262c9a3a6603180339e31f6c177ce487f0d40b1aa3c",
+      "status": "PASS",
+      "expected_lines": 12,
+      "verified_lines": 12
+    },
+    {
+      "program": "sqroot.shm",
+      "sha256": "4fbdc3fe870a2c85b60d820a508dece5eb0c9add85648bca666df08977b2581c",
+      "status": "PASS",
+      "expected_lines": 4,
+      "verified_lines": 4
+    },
+    {
+      "program": "strsplit.shm",
+      "sha256": "66e42de975febc8413ef311c209eaa2fd7295d2c3250c4bbfc8e314d44806d83",
+      "status": "PASS",
+      "expected_lines": 4,
+      "verified_lines": 4
+    },
+    {
+      "program": "table.shm",
+      "sha256": "a14f8c90860af9e0789f4af5e0138e22c7ce53d21c7e8eb393c01ac6fdcee4ad",
+      "status": "PASS",
+      "expected_lines": 4,
+      "verified_lines": 11
+    }
+  ]
+}

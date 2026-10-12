@@ -1,0 +1,6 @@
+uses sqrt
+fun <real> = root() {
+    return sqrt(81.)
+}
+fun main() {
+}

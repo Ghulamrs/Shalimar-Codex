@@ -1,0 +1,17 @@
+fun <char[]> = suffix(value[]: char) {
+    return value + "!"
+}
+fun <char[]> = localText() {
+    char buffer[12] : "Shalimar"
+    return buffer
+}
+fun main() {
+    char small[5]
+    char full[20]
+    char source[10] : "abcdef"
+    small : suffix(source)
+    full : suffix(source)
+    ? small
+    ? full
+    ? localText()
+}

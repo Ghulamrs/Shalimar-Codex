@@ -1,0 +1,6 @@
+fun <int, int> = computed(x: int) {
+    return (x + 10 + 5, x - 7 - 2)
+}
+fun main() {
+    return
+}

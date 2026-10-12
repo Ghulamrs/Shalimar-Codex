@@ -1,0 +1,11 @@
+fun <> = readAt(values[]: int, index: int) {
+    ? values[index]
+}
+
+fun main() {
+    int values[3] : {11, 22, 33}
+    int matrix[2][3] : {{1, 2, 3}, {4, 5, 6}}
+    ? values[0], values[2]
+    ? matrix[1][2]
+    readAt(values, 1)
+}

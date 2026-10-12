@@ -1,0 +1,9 @@
+fun <> = bump(&n: int) {
+    n : n + 2
+}
+
+fun main() {
+    int values[3] : {10, 20, 30}
+    bump(values[1])
+    ? values[1]
+}
